@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+          border:1px solid black;
+          width: 40%;
+          margin-top: 100px;
+          margin-left: 300px;
+          
+        }
+        </style>
+
+</head>
+<body>
+    <table>
+    <form>
+        <tr>
+            <th>XYZ Online Delivery</th>
+           
+          </tr>
+          <tr>
+            <th>Personal Details</th>
+          </tr>
+          <tr>
+            <td>First Name: </td>
+            <td><input type="text" id="fname"></td>
+          </tr>
+          <tr>
+            <td> Phone Number</td>
+
+            <td><input type="number" id="fno"> </td>
+          </tr>
+          <tr>
+            <th >Order Perferences</th>
+          </tr>
+          <tr>
+            <td>  Size: </td>
+            <td>
+                <input type="radio" name="size"> Small
+                <input type="radio" name="size"> Medium
+                <input type="radio" name="size"> Large
+            </td>
+            
+          <tr>
+            <td>
+               Base :
+            </td>
+             <td>
+                <select>
+                    <option>Pan Pizza</option>
+                    <option>Cheese Crust</option>
+                    <option>Chicken Stuffed Crust</option>
+                </select>
+             </td>
+          </tr>
+          <tr>
+            <td>
+                Toppings
+            </td>
+            <td>
+                <input type="checkbox" name="topping">Cheese
+                <input type="checkbox" name="topping">Olives
+                <input type="checkbox" name="topping">Tomatoes
+                <input type="checkbox" name="topping">Capsicum
+                <input type="checkbox" name="topping">Jalapinum
+                <input type="checkbox" name="topping">mashrooms
+                <input type="checkbox" name="topping">paperromi
+                <input type="checkbox" name="topping">Onion
+            </td >
+          </tr>
+          <tr>
+            <td>
+                Additional Detailes:
+            </td>
+            <td>
+                <textarea name="message" rows="5" cols="30"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th >
+                Conform detateles and Procede to Pay
+            
+            
+                <input type="radio" name="option">Yes
+                <input type="radio" name="option">No
+            </th>
+          </tr>
+          <tr>
+            <td >
+                <input type="Submit" value="Submit">
+            </td>
+          </tr>
+    </form>
+   </table> 
+</body>
+</html>
