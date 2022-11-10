@@ -1,0 +1,43 @@
+create table Worker (
+Order_id int ,
+First_name varchar(250),
+Last_name varchar(250),
+Salary int ,
+Joining_date datetime,
+Depertment varchar(250) );
+
+select * from worker;
+
+insert into Worker (Order_id, First_name, Last_name, Salary, Joining_date, Depertment) 
+values(001,'Monika','Arora',100000, '2014-02-20 09:00:00' ,'HR');
+
+insert into worker values(002, 'Niharika', 'Verma', 80000, '2014-06-11 09:00:00', 'Admin');
+insert into worker values(003, 'Vishal', 'Singhal', 300000, '2014-02-20 09:00:00', 'HR');
+insert into worker values(004, 'Amitabh', 'Singh', 500000, '2014-02-20 09:00:00', 'Admin');
+insert into worker values(005, 'Vivek', 'Bhati', 500000, '2014-06-11 09:00:00', 'Admin');
+insert into worker values(006, 'Vipul', 'Diwan', 200000, '2014-06-11 09:00:00', 'Account');
+insert into worker values(007, 'Satish', 'Kumar', 75000, '2014-01-20 09:00:00', 'Account');
+insert into worker values(008, 'Geetika', 'Chauhan', 90000, '2014-04-11 09:00:00', 'Admin');
+
+
+
+select replace(First_name,'a','A') from worker ;
+select concat(First_name, '   ' ,Last_name) as COMPLETE_NAME from worker; 
+
+select * from worker 
+order by First_name, Depertment desc;
+Select * from worker where Depertment ='Admin'; 
+
+Select * from worker where First_name in ('vipul' , 'satish'); 
+
+select * from worker where First_name like '%a'; 
+
+select * from worker where First_name like '___h';
+
+select First_name as Worker_name from worker; 
+
+select upper(First_name) from worker; 
+
+
+select * from worker 
+where Salary between 100000 and 500000;
